@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+
+	<script>
+    function modificaEstilo(corDeFundo, l, a){
+      
+      document.getElementById('quadrado').style.background = corDeFundo
+      //alterando cor de fundo do elemento
+
+      document.getElementById('quadrado').style.width = l
+      //alterando a largura do elemento
+
+      document.getElementById('quadrado').style.height = a
+      //alterando a altura do elemento
+
+    }
+
+
+  </script>
+
+</head>
+
+<body>
+  <h1>Manipulando Estilo</h1>
+
+  <button type="button" onclick="modificaEstilo('#FF0000', '350px')" >Vermelho</button>
+  <button type="button" onclick="modificaEstilo('#00FF00', '200px', '60px')" >Verde</button>
+  <button type="button" onclick="modificaEstilo('#0000FF', '220px', '175px')" >Azul</button>
+
+  <button type="button" onclick="modificaEstilo('#Fb7455', '220px', '175px')" >Azul</button>
+  
+  <hr>
+  <div style="border: solid 1px #000; width: 150px; height: 100px;" id="quadrado"></div>
+  
+
+</body>
+</html>

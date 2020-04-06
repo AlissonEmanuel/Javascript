@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script>
+		//forEach é uma função que é aplicado em arrays
+
+		//var listaFuncionarios = ['alisson', 'emanuel', 'nego', 'cris', 'piu piu', 'pica pau']
+
+		var listaFuncionarios = Array()
+		 listaFuncionarios['x'] = 'alisson'
+		 listaFuncionarios['c'] = 'alisson'
+		 listaFuncionarios[0] = 'alisson'
+		 listaFuncionarios[2] = 'alisson'
+		 listaFuncionarios[-1] = 'alisson'
+
+		var f = function(valor, indice){
+			console.log(valor, indice)
+		}
+
+		listaFuncionarios.forEach(f)
+		
+		/*
+		console.log(listaFuncionarios)
+		document.write(listaFuncionarios[0])
+		
+		listaFuncionarios.forEach(function(valor, indice, array){
+
+		console.log('indice: ' + indice + ' | valor ' + valor)
+			
+			if(valor == 'alisson'){
+				array[indice] = 'um novo valor'
+			}
+
+		})
+		
+		console.log(listaFuncionarios)
+		document.write('<br />' + listaFuncionarios[0])
+		*/
+
+	</script>
+
+</head>
+
+<body>
+</body>
+</html>

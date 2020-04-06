@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script>
+
+	//document.write
+	//console.log()
+
+	/*1) Baseado no exemplo da aula "Praticando um pouco - Percorrendo e listando itens de Arrays", implemente a mesma solução, porém utilizando o comando for.*/
+	
+	var lista_frutas = Array();
+
+	lista_frutas[0] = 'Banana';
+	lista_frutas[1] = 'Maçã';
+	lista_frutas[2] = 'Morango';
+	lista_frutas[3] = 'Uva';
+	lista_frutas[5] = 'Limão'
+	lista_frutas[6] = 'Pera'
+	lista_frutas[7] = 'Maracujá'
+	lista_frutas[8] = 'Mamão'
+	lista_frutas[9] = 'Castanha'
+	lista_frutas[5] = 'Melancia'
+	
+	for (var i = 0; i < lista_frutas.length; i++) {
+		document.write(lista_frutas[i]);
+		console.log(lista_frutas[i])
+	} 
+
+	//--------------------------------------------------------------------------------------------------------------
+
+	/*2) Baseado no exemplo da aula "Praticando um pouco - Criando uma tabuada de 1 a 10 (laços encadeados)", implemente a mesma solução, porém utilizando o comando while.*/
+
+	var x = 1;
+	var y = 1;
+	while (x <= 10) {
+		y = 1;
+		while (y <= 10) {
+			console.log(x + ' x ' + y + ' = ' + x * y);
+			document.write(x + ' x ' + y + ' = ' + x * y);
+			y++;
+		}
+		console.log("\n");
+		document.write("<hr/>");
+		x++;
+	}
+
+		/*
+		for(var y = 1; y <= 10; y++){
+			for(var x = 1; x <= 10; x++){
+				document.write( y + 'x' + x + '=' + (y*x) + '<br />')
+			}	
+
+			document.write('<hr>')
+		}
+		*/
+
+	</script>
+
+</head>
+
+<body>
+</body>
+</html>

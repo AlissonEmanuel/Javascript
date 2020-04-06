@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script>
+
+    /*
+       var data = new Date()
+
+       //adicionar/remover dias
+       document.write(data.toString())
+       data.setDate(data.getDate() + 12) //Adicionando/Removendo Dias
+       document.write('<hr />')
+       document.write(data.toString())
+       document.write('<br /> <br /> <hr />')
+
+
+       //adicionar/remover meses
+       document.write(data.toString())
+       data.setMonth(data.getMonth() - 1) //Adicionando/Removendo Meses
+       document.write('<hr />')
+       document.write(data.toString())
+       document.write('<br /> <br /> <hr />')
+
+       //adicionar/remover anos
+       document.write(data.toString())
+       data.setFullYear(data.getFullYear() - 1) //Adicionando/Removendo Anos
+       document.write('<hr />')
+       document.write(data.toString())
+       document.write('<br /> <br /> <hr />')
+
+       //document.write(data.getDate() + '/' + (data.getMonth() + 1) + '/' +  data.getFullYear())
+       //minha data atual 27/03/2019
+    
+       */
+
+    //01/01/2018
+    var data1 = new Date(2018, 0, 1)
+
+    //31/12/2019
+    var data2 = new Date(2019, 11, 31)
+
+    document.write(data1.toString())
+    document.write('<hr />')
+    document.write('<hr />')
+    document.write(data2.toString())
+
+    //converter datas para algo que possamos calcular
+    document.write('<br /> <br /> <hr />')
+    document.write(data1.getTime())
+    document.write('<hr />')
+    document.write('<hr />')
+    document.write(data2.getTime())
+
+    document.write('<br /> <br /> <hr />')
+
+    var milissegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+    document.write(milissegundos_entre_datas)
+
+    /*Math.abs() --> Método que retorna o valor absoluto(positivo) do número*/
+
+    //calculando quantos milissegundos tem em um dia
+    var milissegundos_por_dia = (1*24*60*60*1000)
+    document.write('<br /> <br /> <hr />')
+    document.write('1 dia tem exatamente: ' + milissegundos_por_dia + 'milissegundos')
+
+    document.write('<br /> <br /> <hr />')
+    document.write('A diferença entre as datas é de: ' + milissegundos_entre_datas/milissegundos_por_dia + ' dias' )
+
+
+</script>
+
+</head>
+
+<body>
+</body>
+</html>

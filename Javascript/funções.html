@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+  <script>
+
+    /*
+    function calcularAreaTerrreno (largura, comprimento){
+
+     //lógica
+     var area = largura * comprimento
+
+     return area;
+   }
+
+   var largura = prompt('Digite a largura do terreno em metros')
+   var comprimento = prompt('Digite o comprimento do terreno em metros')
+
+   var area = calcularAreaTerrreno(largura , comprimento)
+
+   document.write('o terreno possui ' + area + ' metros quadrados')
+   //document.write('o terreno possui ' +calcularAreaTerrreno(largura, comprimento)+ ' metros quadrados')
+   */
+
+  /*
+   function soma(a , b){
+    return a + b
+   }
+   
+   console.log(soma(7,7))
+   console.log(soma(2,22,,222,2222)) //O Javascript desconsidera os parametros adicionais
+   */
+
+  //[i] <-- indica a posição do indice
+
+  function soma(){
+    var resultado = 0
+
+    for(var i in arguments){
+      resultado += arguments[i]      
+      //console.log(arguments[i])  
+    } 
+    return resultado
+  }
+
+  console.log(soma(10, 2, 1, 10, 77, 'Alisson'));
+
+  /*O objeto "arguments" é uma variável local disponível dentro de todas as funções. Você pode referenciar os argumentos de uma função dentro da função usando o objeto arguments. Esse objeto contém um registro para cada argumento fornecido para a função, com o índice do primeiro registro começando em 0.*/
+
+</script>
+</head>
+
+<body>
+</body>
+</html>

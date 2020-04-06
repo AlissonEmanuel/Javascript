@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Array Pesquisa</title>
+	<script>
+
+		var lista_frutas = Array()
+
+		lista_frutas[0] = 'Banana'
+		lista_frutas[1] = 'Uva'
+		lista_frutas[2] = 'Goiaba'
+		lista_frutas[3] = 'Pessego'
+		lista_frutas[4] = 'Limão'
+		
+		//verificando se o elemento existe de fato, e qual a posição o mesmo se encontra
+
+		/*
+		if (lista_frutas.indexOf('goiaba') == -1){
+			console.log('O elemento não existe')
+		}else{
+			console.log('O elemento existe e está na posição ' + lista_frutas.indexOf('goiaba'))
+		}*/
+
+	//-------------------------------------------------------------------------------------------------------------//
+
+		/*Utilização de uma variavel para exibir o mesmo resultado do código acima, deixando o nosso código mais otimizado e menos verboso */
+		var auxiliar = lista_frutas.indexOf('Goiaba')
+
+		if (auxiliar == -1){
+			console.log('O elemento não existe')
+		}else{
+			console.log('O elemento existe e está na posição ' + auxiliar)
+		}
+		
+		//console.log(lista_frutas.indexOf('Goiaba')) 
+		/*Utilização do Método indexOf para realizar pesquisa em um array, passando o parametro desejado*/
+		
+	</script>
+
+</head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+	<script>
+
+		function exibirArtigo(id, callbackSucesso, callbackErro){
+  		//Lógica: Recuperar o ID via requisição HTTP
+
+  		if(true){
+  			callbackSucesso('Funções de Callback Em JS', 'Funções de Callback são....')
+  		}else{
+  			callbackErro('Erro de recuperação: ')
+  		}
+
+  	}
+
+  	var callbackSucesso = function(titulo, descricao){
+  		document.write('<h1> ' + titulo + ' </h1>')
+  		document.write('<hr>')
+  		document.write('<p> ' + descricao + ' </p>')
+  	}
+
+  	var callbackErro = function(){
+  		document.write('<p><b>Erro: </b> ' + erro + ' </p>')
+  	}
+
+  	exibirArtigo(1, callbackSucesso, callbackErro)
+
+  </script>
+
+</head>
+
+<body>
+</body>
+</html>
